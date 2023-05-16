@@ -179,7 +179,9 @@ footer > div {
 
 #header-image{
   display: flex;
-  padding-left: 50%;
+  padding-left:850px;
+  border-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 #second-section {
