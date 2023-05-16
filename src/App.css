@@ -1,38 +1,235 @@
-.App {
+body {
+  background-color: white;
+  font-family: 'Futura', Verdana;
+  margin: 3rem 5% 3rem 5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #F4CE14;
+  padding-bottom: 0%;
+}
+
+h3 {
+  padding-top: 0%;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+nav ul {
+  list-style: none;
   text-align: center;
+  border-radius: 3em;
+  font-size: 50%;
+  padding: 0.5em;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav a:hover {
+  color: rgb(244, 205, 20);
+  transform: scale(1.1);
+}
+
+nav li {
+  display: inline-block;
+  word-spacing: 0.1%;
+  padding: 2em;
+}
+
+#promo {
+  /*border: 0.75em solid rgb(244, 205, 20);
+  border-radius: 3em;
+  /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(icons_assets/restauranfood.jpg);
+  background-size: cover;
+  background-position: center;*/
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#promo div {
+  margin-bottom: 1rem;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+#promo div:hover {
+  transform: scale(1.05);
+}
+
+#promo > p {
+  font-size: small;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+article {
+  flex: 1;
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 2.5em;
+  object-fit: cover;
+  object-position: center;
+}
+
+article h2, #menu p, #booking p, #location p {
+  margin: 1rem;
+  color: white;
+  text-align: center;
+}
+
+article a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(244, 205, 20);
+  border-radius: 3em;
+}
+
+#third-section {
+  display: flex;
+  
+}
+
+#fourth-section {
+  display: flex;
+  padding-left: 20%;
+  padding-right: auto;
+}
+
+#light {
+  background-color:bisque;
+}
+
+footer {
+  display: flex;
+}
+
+footer p {
+  color: rgb(73, 93, 86);
+  text-align: center;
+  font-weight: bold;
+}
+
+footer img {
+  display: block;
+  margin: 0.5rem auto;
+  width: 25%;
+}
+
+footer > div {
+  flex: 1;
+}
+
+#button {
+  display: inline;
+  height: 51px;
+  width: 270px;
+  font-size: medium;
+  border-radius: 30px;
+  background-color: #F4CE14;
+}
+
+#header-image{
+  display: flex;
+  padding-left: 50%;
+}
+
+#second-section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+}
+
+#second-section > button {
+  display: inline;
+}
+
+#footer{
+  display: flex;
+  list-style: none;
+  padding-top: 15%;
+}
+
+#footer > ul{
+  padding-left: 20%;
+}
+
+#about{
+  
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+.parent {
+  
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right:70px;
+
+  border: 1px solid #000000;
+  float: right;
+}
+.image2 {
+  position: relative;
+  top: 20px;
+  left: 70px;
+  border: 1px solid #000000;
+  float: right;
 }
